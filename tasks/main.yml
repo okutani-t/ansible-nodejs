@@ -1,0 +1,8 @@
+---
+- name: install the nodejs
+  yum: name=redis state=latest enablerepo=epel
+  with_items:
+    - nodejs
+    - npm
+  tags:
+    - nodejs
